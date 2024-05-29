@@ -1,4 +1,11 @@
-/* css ref: https://youtu.be/oLgtucwjVII?feature=shared */
+/* 
+css references:
+- navbar/mobile-menu: https://youtu.be/oLgtucwjVII?feature=shared 
+- image gallery: https://youtu.be/Trw_9lisYVY?feature=shared
+- 
+*/
+
+@import url("https://use.typekit.net/sxt3pwj.css");
 
 :root{
     --color-nav: transparent;
@@ -7,13 +14,12 @@
     --color-accent: #F08000;
 
     --nav-font-size: 20px;
-    --h1-font-size: 50px;
+    --h1-font-size: 55px;
 
-    --default-font: "Helvetica Neue", sans-serif;
+    --default-font: "HelveticaNeue-Regular", sans-serif;
     --nav-btn-font: "HelveticaNeue-Thin", sans-serif;
+    /* --h1-highlight-font: "pf-pixelscript", sans-serif; */
     --h1-highlight-font: "Bodoni 72", serif;
-    
-
 }
 
 * {
@@ -28,6 +34,7 @@ body {
     font-family: var(--default-font);
 }
 
+/* ---- NAV BAR SECTION START ---- */
 nav {
     background: var(--color-nav);
     /* background: orange; */
@@ -47,7 +54,7 @@ a.logo {
 
 nav ul {
     float: right;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 nav ul label {
@@ -67,11 +74,11 @@ nav ul li a {
     font-size: var(--nav-font-size);
 }
 
-a.active {
+nav a.active {
     color: var(--color-accent);
 }
 
-a:hover {
+nav a:hover {
     color: var(--color-accent);
     transition: 0.5s;
 }
@@ -116,18 +123,12 @@ a:hover {
         top: 60px;
     }
 }
+/* ---- NAV BAR SECTION END ---- */
 
-.more-text p {
-    padding: 80px 50px 0px 50px;
-}
-
-.more-text hr {
-    margin: 15px 25px;
-    display: none;
-}
-
-.home-title h1 {
+/* ---- Home/Work SECTION START ---- */
+.home-title h1, .about-title h1 {
     font-size: var(--h1-font-size);
+    font-family: "HelveticaNeue-Regular", sans-serif;
     padding: 100px 50px 0px 50px;
     font-weight: normal;
 }
@@ -135,6 +136,14 @@ a:hover {
 .home-title h1 span {
     font-family: var(--h1-highlight-font); 
     font-style: italic;
+}
+/* ---- Home/Work SECTION END ---- */
+
+/* ---- &more SECTION START ---- */
+.more-text p {
+    font-size: 12;
+    font-weight: 300;
+    padding: 80px 50px 0px 50px;
 }
 
 .more-images {
@@ -145,7 +154,7 @@ a:hover {
     padding: 20px 0;
     margin: 0px 45px;
 }
-.more-images .row {
+.more-images .image-box {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -163,4 +172,62 @@ a:hover {
     /* margin-top: 10px;
     vertical-align: middle; */
 }
+/* ---- &more SECTION END ---- */
+
+/* ---- About SECTION END ---- */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-bio {
+    padding: 20px 50px 0px 50px;
+    width: 95%;
+    font-size: 16px;
+    font-weight: 300; /*! set font weight as global var and change for paragraphs */
+    float: left;
+}
+
+.bio-1, .bio-2, .bio-3, .bio-4 {
+    margin-bottom: 20px;
+}
+
+.bio-1 span, .bio-2 span, .bio-3 span, .bio-4 span {
+    font-weight: 525; /*! set font weight as global var and change for bold */
+}
+
+.bio-2 span a, .bio-3 span a, .bio-4 span a{
+    color: black;
+    text-decoration: underline;
+}
+
+.about-pfp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 100px;
+    margin-right: 160px;
+    float: right;
+}
+
+.about-pfp img {
+    width: 120%;
+    margin-bottom: 15px;
+}
+
+.about-pfp .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+
+.about-pfp .links a {
+    font-weight: 300;
+    color: black;
+    text-decoration: underline;
+}
+
+
 
