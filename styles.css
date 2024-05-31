@@ -32,6 +32,9 @@ css references:
 
 body {
     font-family: var(--default-font);
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---- NAV BAR SECTION START ---- */
@@ -80,7 +83,7 @@ nav a.active {
 
 nav a:hover {
     color: var(--color-accent);
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .check-btn {
@@ -123,7 +126,50 @@ nav a:hover {
         top: 60px;
     }
 }
-/* ---- NAV BAR SECTION END ---- */
+/* ---- NAV BAR SECTION ---- */
+
+/* ---- FOOTER SECTION START ---- */
+#home-footer, #about-footer {
+    position: fixed;
+}
+
+#about-footer .footer-links a {
+    color: white;
+}
+
+footer {
+    margin: auto;
+    height: 40px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--color-nav);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-links, .footer-copyright {
+    line-height: 30px;
+    padding: 0 50px;
+}
+
+.footer-links a, .footer-copyright p {
+    font-size: 15px;
+    font-family: var(--nav-btn-font);
+    color: black;
+}
+
+.footer-links a {
+    padding-right: 20px;
+}
+
+.footer-links a:hover {
+    color: var(--color-accent);
+    transition: 0.25s;
+}
+/* ---- FOOTER SECTION END ---- */
 
 /* ---- Home/Work SECTION START ---- */
 .home-title h1, .about-title h1 {
@@ -197,7 +243,7 @@ nav a:hover {
     font-weight: 525; /*! set font weight as global var and change for bold */
 }
 
-.bio-2 span a, .bio-3 span a, .bio-4 span a{
+.bio-2 span a, .bio-3 span a, .bio-4 span a {
     color: black;
     text-decoration: underline;
 }
@@ -229,5 +275,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.about-pfp .links a:hover, .bio-2 span a:hover, 
+.bio-3 span a:hover, .bio-4 span a:hover {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: 0.25s;
+}
 
 
