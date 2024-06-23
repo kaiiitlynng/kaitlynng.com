@@ -15,6 +15,7 @@ css references:
 
     --nav-font-size: 20px;
     --h1-font-size: 55px;
+    --h2-font-size: 45px;
 
     --default-font: "HelveticaNeue-Regular", sans-serif;
     --nav-btn-font: "HelveticaNeue-Thin", sans-serif;
@@ -201,26 +202,29 @@ footer {
     font-style: italic;
 }
 
+/*! hidden (for now?) */
 .filter-buttons {
     position: relative;
-    max-width: 1350px;
+    /* max-width: 1350px; */
     width: 100%;
     padding-left: 50px;
     margin: 25px auto;
 
-    display: flex;
+    /* display: flex; */
+    display:none;
     align-items: center;
     gap: 20px;
 }
 
 .filter-buttons button {
-    padding: 10px 20px;
-    font-size: 15px;
-    background: white;
-
-    border: 1.5px solid black;
-    border-radius: 25px;
+    padding: 10px 15px;
     cursor: pointer;
+
+    background: white;
+    border: 1.5px solid black;
+    border-radius: 20px;
+
+    font-size: 15px;
 }
 
 .filter-buttons button.active {
@@ -231,49 +235,77 @@ footer {
 
 .filter-buttons button:hover {
     background: var(--color-accent);
-    opacity: 60%;
+    /* opacity: 60%; */
     border: 1.5px solid rgb(242, 181, 69);
     color: white;
     transition: 0.25s;
 }
+/*! hidden (for now?) */
 
 .cards {
     padding: 10px 50px 25px 50px;
     display: flex;
+    flex-direction: column;
     margin-top: 25px;
-    /* background-color: red; */
 }
 
 .card {
+    opacity: 60%;
     display: flex;
-    flex-basis: 200px;
-    background-color: white;
-    
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 35px;
 }
 
 .card img {
-    width: 200%;
-    flex-basis: 50%;
+    /* width: 75%; */
+    width: 1700px;
+    height: 400px;
+    margin-right: 100px;
 }
 
 .card-body {
-    flex-basis: 70%;
-    padding: 20px 0px 0px 100px;
+    padding: 20px 20px 20px 0px;
     display: flex;
     flex-direction: column;
-    background-color: red;
 }
 
-.card-body h2 {
-
+.card-body .card-title {
+    font-size: var(--h2-font-size);
+    font-weight: normal;
+    margin-bottom: 5px;
+    width: 100%;
 }
+
+.card-body .card-role {
+    font-weight: normal;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.card-body .card-text {
+    font-weight: 300;
+    width: 65%;
+}
+
+.card:hover {
+    opacity: 100%;
+    transition: 0.25s;
+}
+
+/* .card img:hover {
+    transform:scale(1.03);
+    transition: 0.25s;
+} */
 
 @media (max-width: 650px) {
     .home-title h1, .about-title h1 {
         font-size: 20px;
     }
 }
-
 /* ---- HOME/WORK SECTION END ---- */
 
 /* ---- &MORE SECTION START ---- */
