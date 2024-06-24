@@ -45,7 +45,7 @@ nav {
     /* background: orange; */
     height: 80px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
 }
 
 a.logo {
@@ -190,12 +190,12 @@ footer {
 .home-title h1, .about-title h1 {
     font-size: var(--h1-font-size);
     font-family: "HelveticaNeue-Regular", sans-serif;
-    padding: 100px 50px 25px 50px;
+    padding: 25px 50px 25px 50px;
     font-weight: normal;
 }
 
 .about-title h1 {
-    padding: 100px 50px 0px 50px;
+    padding: 25px 50px 0px 50px;
 }
 
 .home-title h1 span {
@@ -262,13 +262,14 @@ footer {
     max-width: 50%;
     max-height: auto;
     object-fit: cover;
-    margin-right: 175px;
+    margin-right: 135px;
 }
 
 .card-body {
     padding: 20px 20px 20px 0px;
     display: flex;
     flex-direction: column;
+    background: orange;
 }
 
 .card-body .card-title {
@@ -314,7 +315,7 @@ footer {
 .more-text p {
     font-size: 12;
     font-weight: 300;
-    padding: 80px 50px 0px 50px;
+    padding: 12.5px 50px 0px 50px;
 }
 
 .more-images {
@@ -376,7 +377,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 100px;
+    margin-top: 25px;
     margin-right: 160px;
     float: right;
 }
