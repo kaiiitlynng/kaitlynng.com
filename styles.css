@@ -20,7 +20,8 @@ css references:
     --default-font: "HelveticaNeue-Regular", sans-serif;
     --nav-btn-font: "HelveticaNeue-Thin", sans-serif;
     /* --h1-highlight-font: "pf-pixelscript", sans-serif; */
-    --h1-highlight-font: "Bodoni 72", serif;
+    /* --h1-highlight-font: "Bodoni 72", serif; */
+    --h1-highlight-font: "Caslon", serif;
 }
 
 * {
@@ -254,14 +255,14 @@ footer {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
 }
 
 .card img {
-    /* width: 75%; */
-    width: 1700px;
-    height: 400px;
-    margin-right: 100px;
+    max-width: 50%;
+    max-height: auto;
+    object-fit: cover;
+    margin-right: 175px;
 }
 
 .card-body {
@@ -288,7 +289,8 @@ footer {
 
 .card-body .card-text {
     font-weight: 300;
-    width: 65%;
+    width: 70%;
+    margin-bottom: 10px;
 }
 
 .card:hover {
