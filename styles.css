@@ -30,11 +30,11 @@ css references:
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: var(--default-font);
-
     display: flex;
     flex-direction: column;
 }
@@ -42,10 +42,10 @@ body {
 /* ---- NAV BAR SECTION START ---- */
 nav {
     background: var(--color-nav);
-    /* background: orange; */
     height: 80px;
     width: 100%;
-    /* position: fixed; */
+    z-index: 1;
+    position: fixed;
 }
 
 a.logo {
@@ -190,12 +190,12 @@ footer {
 .home-title h1, .about-title h1 {
     font-size: var(--h1-font-size);
     font-family: "HelveticaNeue-Regular", sans-serif;
-    padding: 25px 50px 25px 50px;
+    padding: 90px 50px 25px 50px;
     font-weight: normal;
 }
 
 .about-title h1 {
-    padding: 25px 50px 0px 50px;
+    padding: 90px 50px 0px 50px;
 }
 
 .home-title h1 span {
@@ -251,7 +251,7 @@ footer {
 }
 
 .card {
-    opacity: 70%;
+    opacity: 75%;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -262,7 +262,7 @@ footer {
     max-width: 50%;
     max-height: auto;
     object-fit: cover;
-    margin-right: 135px;
+    margin-right: 105px;
 }
 
 .card-body {
@@ -276,6 +276,7 @@ footer {
     font-weight: normal;
     margin-bottom: 5px;
     width: 100%;
+    color: var(--color-text);
 }
 
 .card-body .card-role {
@@ -285,12 +286,14 @@ footer {
     font-size: 16px;
     margin-bottom: 20px;
     width: 100%;
+    color: var(--color-text);
 }
 
 .card-body .card-text {
     font-weight: 300;
     width: 70%;
     margin-bottom: 10px;
+    color: var(--color-text);
 }
 
 .card:hover {
@@ -314,7 +317,7 @@ footer {
 .more-text p {
     font-size: 12;
     font-weight: 300;
-    padding: 12.5px 50px 0px 50px;
+    padding: 80px 50px 0px 50px;
 }
 
 .more-images {
@@ -376,7 +379,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 25px;
+    margin-top: 90px;
     margin-right: 160px;
     float: right;
 }
@@ -406,4 +409,7 @@ footer {
     transition: 0.25s;
 }
 
+.content p {
+    margin-left: 50px;
+}
 
