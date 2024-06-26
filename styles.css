@@ -21,7 +21,7 @@ css references:
     --nav-btn-font: "HelveticaNeue-Thin", sans-serif;
     /* --h1-highlight-font: "pf-pixelscript", sans-serif; */
     /* --h1-highlight-font: "Bodoni 72", serif; */
-    --h1-highlight-font: "Caslon", serif;
+    --h1-highlight-font: "Times New Roman", serif;
 }
 
 * {
@@ -190,12 +190,12 @@ footer {
 .home-title h1, .about-title h1 {
     font-size: var(--h1-font-size);
     font-family: "HelveticaNeue-Regular", sans-serif;
-    padding: 90px 50px 25px 50px;
+    padding: 100px 50px 25px 50px;
     font-weight: normal;
 }
 
 .about-title h1 {
-    padding: 90px 50px 0px 50px;
+    padding: 100px 50px 0px 50px;
 }
 
 .home-title h1 span {
@@ -203,45 +203,44 @@ footer {
     font-style: italic;
 }
 
-/*! hidden (for now?) */
-.filter-buttons {
+.filter-tabs {
     position: relative;
-    /* max-width: 1350px; */
     width: 100%;
     padding-left: 50px;
-    margin: 25px auto;
+    margin: 10px 25px -25px 0px;
 
-    /* display: flex; */
-    display:none;
+    display: flex;
     align-items: center;
-    gap: 20px;
 }
 
-.filter-buttons button {
-    padding: 10px 15px;
+.filter-tabs button {
+    background: none;
+    border: none;
+    padding: 15px 8px;
     cursor: pointer;
 
-    background: white;
-    border: 1.5px solid black;
-    border-radius: 20px;
-
-    font-size: 15px;
+    font-family: var(--nav-btn-font); 
+    font-size: var(--nav-font-size);
 }
 
-.filter-buttons button.active {
-    background: var(--color-accent);
-    border: 1.5px solid rgb(242, 181, 69);
-    color: white;
+.filter-tabs button.active {
+    background: none;
+    border: none;
+    color: var(--color-accent);
 }
 
-.filter-buttons button:hover {
-    background: var(--color-accent);
+.filter-tabs button:hover {
+    background: none;
     /* opacity: 60%; */
-    border: 1.5px solid rgb(242, 181, 69);
-    color: white;
+    color: var(--color-accent);
+    border: none;
     transition: 0.25s;
 }
-/*! hidden (for now?) */
+
+.filter-tabs p {
+    font-family: var(--nav-btn-font);
+    font-size: var(--nav-font-size);
+}
 
 .cards {
     padding: 10px 50px 25px 50px;
@@ -256,6 +255,10 @@ footer {
     flex-direction: row;
     width: 100%;
     margin-bottom: 40px;
+}
+
+.hidden {
+    display: none;
 }
 
 .card img {
@@ -363,7 +366,7 @@ footer {
 }
 
 .bio-1, .bio-2, .bio-3, .bio-4 {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .bio-1 span, .bio-2 span, .bio-3 span, .bio-4 span {
@@ -379,7 +382,7 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 90px;
+    margin-top: 100px;
     margin-right: 160px;
     float: right;
 }
@@ -410,6 +413,7 @@ footer {
 }
 
 .content p {
+    padding-top: 90px;
     margin-left: 50px;
 }
 
