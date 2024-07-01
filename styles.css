@@ -2,10 +2,9 @@
 css references:
 - navbar/mobile-menu: https://youtu.be/oLgtucwjVII?feature=shared 
 - image gallery: https://youtu.be/Trw_9lisYVY?feature=shared
-- 
 */
 
-@import url("https://use.typekit.net/sxt3pwj.css");
+/* @import url("https://use.typekit.net/sxt3pwj.css"); */
 
 :root{
     --color-nav: transparent;
@@ -17,10 +16,13 @@ css references:
     --h1-font-size: 55px;
     --h2-font-size: 45px;
 
+    --p-font-weight: 300;
+    --bold-p-font-weight: 525;
+    --subh-font-weight: 400;
+    --h-font-weight: normal;
+
     --default-font: "HelveticaNeue-Regular", sans-serif;
     --nav-btn-font: "HelveticaNeue-Thin", sans-serif;
-    /* --h1-highlight-font: "pf-pixelscript", sans-serif; */
-    /* --h1-highlight-font: "Bodoni 72", serif; */
     --h1-highlight-font: "Times New Roman", serif;
 }
 
@@ -44,7 +46,7 @@ nav {
     background: var(--color-nav);
     height: 80px;
     width: 100%;
-    z-index: 1;
+    z-index: 2;
     position: fixed;
 }
 
@@ -163,7 +165,7 @@ footer {
 .footer-links a, .footer-copyright p {
     font-size: 15px;
     font-family: var(--nav-btn-font);
-    color: black;
+    color: var(--color-text);
 }
 
 .footer-links a {
@@ -173,6 +175,23 @@ footer {
 .footer-links a:hover {
     color: var(--color-accent);
     transition: 0.25s;
+}
+
+#work-nav {
+    display: flex;
+    justify-content: auto;
+    padding: 40px;
+}
+
+#work-nav h3 {
+    display: flex;
+    flex-direction: row;
+    font-weight: var(--h-font-weight);
+    color: var(--color-text);
+}
+
+#work-nav span {
+    display: block;
 }
 
 /* ! make mobile screen more responsive */
@@ -191,7 +210,7 @@ footer {
     font-size: var(--h1-font-size);
     font-family: "HelveticaNeue-Regular", sans-serif;
     padding: 100px 50px 25px 50px;
-    font-weight: normal;
+    font-weight: var(--h-font-weight);
 }
 
 .about-title h1 {
@@ -211,6 +230,7 @@ footer {
 
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .filter-tabs button {
@@ -276,16 +296,16 @@ footer {
 
 .card-body .card-title {
     font-size: var(--h2-font-size);
-    font-weight: normal;
+    font-weight: var(--h-font-weight);
     margin-bottom: 5px;
     width: 100%;
     color: var(--color-text);
 }
 
 .card-body .card-role {
-    font-weight: normal;
+    font-weight: var(--h-font-weight);
     font-style: italic;
-    font-weight: 400;
+    font-weight: var(--subh-font-weight);
     font-size: 16px;
     margin-bottom: 20px;
     width: 100%;
@@ -293,7 +313,7 @@ footer {
 }
 
 .card-body .card-text {
-    font-weight: 300;
+    font-weight: var(--p-font-weight);
     width: 70%;
     margin-bottom: 10px;
     color: var(--color-text);
@@ -303,11 +323,6 @@ footer {
     opacity: 100%;
     transition: 0.25s;
 }
-
-/* .card img:hover {
-    transform:scale(1.03);
-    transition: 0.25s;
-} */
 
 @media (max-width: 650px) {
     .home-title h1, .about-title h1 {
@@ -319,7 +334,7 @@ footer {
 /* ---- &MORE SECTION START ---- */
 .more-text p {
     font-size: 12;
-    font-weight: 300;
+    font-weight: var(--p-font-weight);
     padding: 80px 50px 0px 50px;
 }
 
@@ -361,7 +376,7 @@ footer {
     padding: 20px 50px 0px 50px;
     width: 95%;
     font-size: 16px;
-    font-weight: 300; /*! set font weight as global var and change for paragraphs */
+    font-weight: var(--p-font-weight);
     float: left;
 }
 
@@ -370,11 +385,11 @@ footer {
 }
 
 .bio-1 span, .bio-2 span, .bio-3 span, .bio-4 span {
-    font-weight: 525; /*! set font weight as global var and change for bold */
+    font-weight: var(--bold-p-font-weight);
 }
 
 .bio-2 span a, .bio-3 span a, .bio-4 span a {
-    color: black;
+    color: var(--color-text);
     text-decoration: underline;
 }
 
@@ -400,8 +415,8 @@ footer {
 }
 
 .about-pfp .links a {
-    font-weight: 300;
-    color: black;
+    font-weight: var(--p-font-weight);
+    color: var(--color-text);
     text-decoration: underline;
 }
 
@@ -415,5 +430,6 @@ footer {
 .content p {
     padding-top: 90px;
     margin-left: 50px;
+    font-weight: var(--p-font-weight);
 }
 
