@@ -1,0 +1,4 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/Users/kaitlynng/Desktop/website/kaitlynng.com/index.html
+    - /bin/cp -R * $DEPLOYPATH
