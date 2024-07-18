@@ -1,4 +1,4 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/Users/kaitlynng/Desktop/website/kaitlynng.com/index.html
+    - export DEPLOYPATH=/home/kaittnwm/public_html
     - /bin/cp -R * $DEPLOYPATH
