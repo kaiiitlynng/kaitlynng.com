@@ -11,10 +11,15 @@ css references:
     --color-nav-mobile: white;
     --color-text: black;
     --color-accent: #F08000;
+    --color-datashop: #0969DA;
+    --color-archive: #BC4E4E;
+    --color-minexr: #FF8700;
 
     --nav-font-size: 20px;
     --h1-font-size: 55px;
     --h2-font-size: 45px;
+    --p-port-font-size: 18px;
+    --h1-port-font-size: 45px;
 
     --p-font-weight: 300;
     --bold-p-font-weight: 525;
@@ -427,9 +432,98 @@ footer {
     transition: 0.25s;
 }
 
-.content p {
+.portfolio-heading h1 {
     padding-top: 90px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: var(--h1-font-weight);
+    font-size: var(--h1-port-font-size);
+}
+
+.portfolio-heading .heading-details {
+    margin-left: 50px;
+    margin-right: 200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.portfolio-heading .heading-details p {
+    font-weight: var(--p-font-weight);
+    padding-top: 30px;
+    font-size: var(--p-port-font-size);
+}
+
+.portfolio-heading img {
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+.portfolio-heading .heading-details a {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.portfolio-heading figcaption {
     margin-left: 50px;
     font-weight: var(--p-font-weight);
 }
+
+.portfolio-heading figcaption a {
+   font-style: italic;
+   color: var(--color-text);
+   
+}
+
+#plus .heading-details span {
+    font-weight: var(--bold-p-font-weight);
+    color: var(--color-datashop);
+}
+
+#plus .heading-details a:hover {
+    color: var(--color-datashop);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#datashop .heading-details span {
+    font-weight: var(--bold-p-font-weight);
+    color: var(--color-datashop);
+}
+
+#datashop .heading-details a:hover {
+    color: var(--color-datashop);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#minexr .heading-details span {
+    font-weight: var(--bold-p-font-weight);
+    color: var(--color-minexr);
+}
+
+#minexr .heading-details a:hover {
+    color: var(--color-minexr);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#archive .heading-details span {
+    font-weight: var(--bold-p-font-weight);
+    color: var(--color-archive);
+}
+
+#archive .heading-details a:hover {
+    color: var(--color-archive);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+
+
+
+
+
+
 
