@@ -18,6 +18,7 @@ css references:
     --nav-font-size: 20px;
     --h1-font-size: 55px;
     --h2-font-size: 45px;
+    --h3-font-size: 35px;
     --p-port-font-size: 18px;
     --h1-port-font-size: 45px;
 
@@ -440,6 +441,11 @@ footer {
     font-size: var(--h1-port-font-size);
 }
 
+.portfolio-heading h1 a {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
 .portfolio-heading .heading-details {
     margin-left: 50px;
     margin-right: 200px;
@@ -481,7 +487,7 @@ footer {
     color: var(--color-datashop);
 }
 
-#plus .heading-details a:hover {
+#plus .heading-details a:hover, #plus .heading-title h1 a:hover{
     color: var(--color-datashop);
     text-decoration: none;
     transition: 0.25s;
@@ -492,7 +498,12 @@ footer {
     color: var(--color-datashop);
 }
 
-#datashop .heading-details a:hover {
+#datashop .portfolio-header h1 a {
+    color: var(--color-datashop);
+    text-decoration: none;
+    transition: 0.25s; 
+}
+#datashop .heading-details a:hover, #datashop .heading-title h1 a:hover, #datashop .section-content p a:hover{
     color: var(--color-datashop);
     text-decoration: none;
     transition: 0.25s;
@@ -503,7 +514,7 @@ footer {
     color: var(--color-minexr);
 }
 
-#minexr .heading-details a:hover {
+#minexr .heading-details a:hover, #minexr .heading-title h1 a:hover {
     color: var(--color-minexr);
     text-decoration: none;
     transition: 0.25s;
@@ -514,11 +525,64 @@ footer {
     color: var(--color-archive);
 }
 
-#archive .heading-details a:hover {
+#archive .heading-details a:hover, #archive .heading-title h1 a:hover{
     color: var(--color-archive);
     text-decoration: none;
     transition: 0.25s;
 }
+
+.portfolio-section {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 30px;
+}
+
+.portfolio-section .section-title h2 {
+    font-weight: var(--h-font-weight);
+    font-size: var(--h2-font-size);
+}
+
+.portfolio-section .section-content {
+    padding-top: 15px;
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 500px;
+}
+
+.portfolio-section .section-content .img-group {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-section .img-group img {
+    /* display: block;
+    margin: auto; */
+    max-width: 86%;
+    padding-right: 30px;
+}
+#datashop .section-content h3 {
+    font-weight: var(--h-font-weight);
+    color: var(--color-datashop);
+}
+
+.portfolio-section .section-content p {
+    font-size: var(--p-port-font-size);
+    font-weight: var(--p-font-weight);
+    padding-bottom: 15px;
+}
+
+.portfolio-section .section-content p a {
+    color: var(--color-text);
+    text-decoration: underline;
+}
+
+.portfolio-section .section-content p b {
+    font-weight: var(--bold-p-font-weight);
+    padding-bottom: 15px;
+}
+
 
 
 
