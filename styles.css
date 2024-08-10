@@ -7,7 +7,7 @@ css references:
 /* @import url("https://use.typekit.net/sxt3pwj.css"); */
 
 :root{
-    --color-nav: transparent;
+    --color-nav: rgba(255,255,255,0.25);
     --color-nav-mobile: white;
     --color-text: black;
     --color-accent: #F08000;
@@ -21,6 +21,8 @@ css references:
     --h3-font-size: 35px;
     --p-port-font-size: 18px;
     --h1-port-font-size: 45px;
+    --h3-port-font-size: 25px;
+    --h4-port-font-size: 22px;
 
     --p-font-weight: 300;
     --bold-p-font-weight: 525;
@@ -50,6 +52,9 @@ body {
 /* ---- NAV BAR SECTION START ---- */
 nav {
     background: var(--color-nav);
+    /* backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px); */
+
     height: 80px;
     width: 100%;
     z-index: 2;
@@ -65,6 +70,7 @@ a.logo {
 }
 
 nav ul {
+    opacity: 100%;
     float: right;
     margin-right: 50px;
 }
@@ -514,7 +520,7 @@ footer {
     color: var(--color-minexr);
 }
 
-#minexr .heading-details a:hover, #minexr .heading-title h1 a:hover {
+#minexr .heading-details a:hover, #minexr .heading-title h1 a:hover, #minexr .section-content p a:hover {
     color: var(--color-minexr);
     text-decoration: none;
     transition: 0.25s;
@@ -532,9 +538,11 @@ footer {
 }
 
 .portfolio-section {
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-top: 30px;
+    margin-left: 75px;
+    margin-right: 75px;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .portfolio-section .section-title h2 {
@@ -546,31 +554,30 @@ footer {
     padding-top: 15px;
     padding-right: 50px;
     margin-left: 50px;
-    margin-right: 500px;
+
+    overflow: auto;
 }
 
-.portfolio-section .section-content .img-group {
-    padding-top: 5px;
-    padding-bottom: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.portfolio-section .img-group img {
-    /* display: block;
-    margin: auto; */
-    max-width: 86%;
-    padding-right: 30px;
-}
-#datashop .section-content h3 {
+.section-content h3 {
     font-weight: var(--h-font-weight);
+    font-size: var(--h3-port-font-size);
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+#datashop .section-content h3 {
     color: var(--color-datashop);
+}
+
+#minexr .section-content h3 {
+    color: var(--color-minexr);
 }
 
 .portfolio-section .section-content p {
     font-size: var(--p-port-font-size);
     font-weight: var(--p-font-weight);
     padding-bottom: 15px;
+
 }
 
 .portfolio-section .section-content p a {
@@ -583,11 +590,61 @@ footer {
     padding-bottom: 15px;
 }
 
+.portfolio-section .section-content h4 {
+    font-weight: var(--h-font-weight);
+    font-size: var(--h4-port-font-size);
+}
 
+.section-content img {
+    padding-top: 5px;
+    padding-bottom: 30px;
+}
 
+.split-left {
+    overflow: auto;
+}
 
+.split-left img {
+    width: 60%;
+    float: right;
+    /* padding-left: 15px; */
+    /* padding-top: 15px; */
+}
 
+.split-left .text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 70px;
+}
 
+.split-right {
+    background-color: white;
+    overflow: auto;
+}
 
+.split-right img {
+    width: 60%;
+    float: left;
+    padding-right: 70px;
+}
 
+.split-right .text {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
 
+.text-only {
+    float: left;
+    width: 50%;
+}
+
+.split-right .text p {
+    margin-left: 25px;
+    margin-right: 50px;
+}
+
+.list .text h3 {
+    padding-bottom: 30px;
+}
