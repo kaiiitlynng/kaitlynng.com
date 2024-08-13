@@ -19,6 +19,7 @@ css references:
     --h1-font-size: 55px;
     --h2-font-size: 45px;
     --h3-font-size: 35px;
+    --p-font-size: 16px;
     --p-port-font-size: 18px;
     --h1-port-font-size: 45px;
     --h3-port-font-size: 25px;
@@ -29,8 +30,8 @@ css references:
     --subh-font-weight: 400;
     --h-font-weight: normal;
 
-    --default-font: "HelveticaNeue-Regular", sans-serif;
-    --nav-btn-font: "HelveticaNeue-Thin", sans-serif;
+    --default-font: "HelveticaNeue-Regular", "Helvetica", "Arial", sans-serif;
+    --nav-btn-font: "HelveticaNeue-Thin", "Helvetica-Thin", "Arial", sans-serif;
     --h1-highlight-font: "Times New Roman", serif;
 }
 
@@ -336,6 +337,7 @@ footer {
     transition: 0.25s;
 }
 
+/*! mobile screen font size -> local var */
 @media (max-width: 650px) {
     .home-title h1, .about-title h1 {
         font-size: 20px;
@@ -345,7 +347,7 @@ footer {
 
 /* ---- &MORE SECTION START ---- */
 .more-text p {
-    font-size: 12;
+    font-size: var(--p-font-size);
     font-weight: var(--p-font-weight);
     padding: 80px 50px 0px 50px;
 }
@@ -359,6 +361,7 @@ footer {
     padding: 20px 0; /* change space betw text + image grid */
     margin: 0px 38px; /* change margin of image grid */
 }
+
 .more-images .image-box {
     display: flex;
     flex-direction: row;
@@ -387,7 +390,7 @@ footer {
 .about-bio {
     padding: 20px 50px 0px 50px;
     width: 95%;
-    font-size: 16px;
+    font-size: var(--p-font-size);
     font-weight: var(--p-font-weight);
     float: left;
 }
@@ -545,9 +548,14 @@ footer {
     padding-bottom: 35px;
 }
 
-.portfolio-section .section-title h2 {
+.portfolio-section h2 {
     font-weight: var(--h-font-weight);
     font-size: var(--h2-font-size);
+}
+
+.portfolio-section .section-title-quote {
+    /* text-align: center; */
+    margin-left: 50px;
 }
 
 .portfolio-section .section-content {
@@ -596,6 +604,7 @@ footer {
 }
 
 .section-content img {
+    width: 100%;
     padding-top: 5px;
     padding-bottom: 30px;
 }
@@ -604,18 +613,19 @@ footer {
     overflow: auto;
 }
 
-.split-left img {
+.split-left img, .split-left iframe {
     width: 60%;
     float: right;
     /* padding-left: 15px; */
     /* padding-top: 15px; */
+    padding-left: 70px;
 }
 
 .split-left .text {
     width: 40%;
     display: flex;
     flex-direction: column;
-    padding-right: 70px;
+    /* padding-right: 90px; */
 }
 
 .split-right {
@@ -623,7 +633,7 @@ footer {
     overflow: auto;
 }
 
-.split-right img {
+.split-right img, .split-right iframe {
     width: 60%;
     float: left;
     padding-right: 70px;
@@ -640,7 +650,7 @@ footer {
     width: 50%;
 }
 
-.split-right .text p {
+.list .text p {
     margin-left: 25px;
     margin-right: 50px;
 }
