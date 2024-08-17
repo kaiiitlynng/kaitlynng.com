@@ -14,6 +14,7 @@ css references:
     --color-datashop: #0969DA;
     --color-archive: #BC4E4E;
     --color-minexr: #FF8700;
+    --color-plus: #00658E;
 
     --nav-font-size: 20px;
     --h1-font-size: 55px;
@@ -493,11 +494,11 @@ footer {
 
 #plus .heading-details span {
     font-weight: var(--bold-p-font-weight);
-    color: var(--color-datashop);
+    color: var(--color-plus);
 }
 
 #plus .heading-details a:hover, #plus .heading-title h1 a:hover{
-    color: var(--color-datashop);
+    color: var(--color-plus);
     text-decoration: none;
     transition: 0.25s;
 }
@@ -512,6 +513,13 @@ footer {
     text-decoration: none;
     transition: 0.25s; 
 }
+
+#plus .portfolio-header h1 a {
+    color: var(--color-plus);
+    text-decoration: none;
+    transition: 0.25s;   
+}
+
 #datashop .heading-details a:hover, #datashop .heading-title h1 a:hover, #datashop .section-content p a:hover{
     color: var(--color-datashop);
     text-decoration: none;
@@ -575,6 +583,10 @@ footer {
 
 #datashop .section-content h3 {
     color: var(--color-datashop);
+}
+
+#plus .section-content h3 {
+    color: var(--color-plus);
 }
 
 #minexr .section-content h3 {
