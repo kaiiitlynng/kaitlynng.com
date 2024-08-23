@@ -659,7 +659,7 @@ footer {
 
 .text-only {
     float: left;
-    width: 50%;
+    width: 40%;
 }
 
 .list .text p {
@@ -669,4 +669,8 @@ footer {
 
 .list .text h3 {
     padding-bottom: 30px;
+}
+
+.text span {
+    padding-left: 10px;
 }
