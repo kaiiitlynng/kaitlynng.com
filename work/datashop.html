@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" type="image/x-icon" href="../favicon-196x196.png">
+    <script src="../loadImages.js"></script>
 </head>
 
 <body>
@@ -41,7 +42,7 @@
             <p><span>Timeline:</span>
                 <br>Jan 2024 (1 month)</p>
         </div>
-        <img loading="lazy" src="datashop-images/datashop-pthumbnail.png">
+        <img loading="lazy" data-src="datashop-images/datashop-pthumbnail.png">
     </div>
 
     <div class="portfolio-section" id="datashop">
@@ -51,7 +52,7 @@
         <div class="section-content text-only">
             <h3>What is DataShop?</h3>
             <p>DataShop is a web platform providing learning science researchers with data analysis and visualization tools.
-                The site is managed by <a href="https://learnlab.org">CMU's LearnLab</a>, which is part of the <a href="https://www.cmu.edu/simon/index.html" target="_blank">Simon Initiative</a>.
+                The site is managed by <a href="https://learnlab.org" target="_blank">CMU's LearnLab</a>, which is part of the <a href="https://www.cmu.edu/simon/index.html" target="_blank">Simon Initiative</a>.
                 <!-- See how DataShop is used by established researchers <a href="https://pslcdatashop.web.cmu.edu/about/casestudies.html" target="_blank">here</a>. -->
             </p>
 
@@ -64,7 +65,7 @@
 
     <div class="portfolio-section" id="datashop">
         <div class="section-title">
-            <h2>2. Final Product</h2>
+            <h2>2. Final Product & Design Solution</h2>
         </div>
 
         <div class="section-content split-right">
@@ -74,9 +75,15 @@
             <div class="text">
                 <p>
                     We implicitly trust online services/apps that feel and look modern.
-                    In order to maintain and ensure DataShop's credibility, I conducted a UI revamp of the site.
+                    <b>In order to maintain and ensure DataShop's credibility, I conducted a UI revamp of the site.</b>
                 </p>
             </div>
+        </div>
+       
+        <div class="section-content">
+            <br><br>
+            <img loading="lazy" data-src="datashop-images/final-design-1.png">
+            <img loading="lazy" data-src="datashop-images/final-design-2.png">
         </div>
     </div>
 
@@ -86,14 +93,14 @@
         </div>
 
         <div class="section-content split-left">
-            <img loading="lazy" src="datashop-images/old-frames.png">
+            <img loading="lazy" data-src="datashop-images/old-frames.png">
             <h3>Out with the Old</h3>
             <div class="text">
                 <p>DataShop is meant to facilitate novel research in the learning science field.
-                    However, the site's UI was incredibly outdated, making DataShop feel like an abandoned tool of the past.
+                    However, the site's <b>UI was incredibly outdated,</b> making DataShop feel like an <b>abandoned tool of the past.</b>
                     <br><br>
                     The site looked outdated, but it was still functional and useful. 
-                    My goal was to <i>show</i> researchers this is true by modernizing DataShop's UI.
+                    My goal was to <i>show</i> researchers this is true by <b>modernizing DataShop's UI.</b>
                 </p>
 
                 <!-- <h3>Main Focus</h3>
@@ -116,75 +123,75 @@
 
         <div class="section-content">
             <div class="split-right list">
-                <img loading="lazy" src="datashop-images/primer.png">
+                <img loading="lazy" data-src="datashop-images/primer.png">
                 <div class="text">
                     <h3>Design System: Why Primer?</h3>
                     
                         <h4>1. Familiarity</h4>
-                        <p>Primer's primary colors are white and blue, which maintain DataShop's existing primary colors.</p>
+                        <p>Primer's primary colors are white and blue, which <b>maintain</b> DataShop's existing primary colors.</p>
                         <h4>2. Credibility</h4>
-                        <p>Primer's minimal, modern look is instantly recognizable and trustworthy.</p>
+                        <p>Primer's minimal, modern look is instantly <b>recognizable</b> and <b>trustworthy.</b></p>
                     </p>
                 </div>
             </div>
             <br><br><br>
             <div class="split-left">
-                <img loading="lazy" src="datashop-images/accordian.png">
+                <img loading="lazy" data-src="datashop-images/accordian.png">
                 <div class="text">
                     <h3>Reducing Clutter: Accordians</h3>
                     <p>
                         DataShop news posts are usually long and extensive.
-                        However, on the old site there was no way of minimizing these posts, creating an ocean of text and images researchers had to wade through.
+                        However, on the old site there was <b>no way of minimizing these posts,</b> creating an ocean of text and images researchers had to wade through.
                     </p>
                     <p>
-                        To fix this, I utilized Primer's "triangle" icons to allow users to expand or collapse large content sections,  substantially cleaning up the page. 
+                        To fix this, I utilized Primer's "triangle" icons to <b>allow users to expand or collapse</b> large content sections, substantially cleaning up the page. 
                     </p>
                 </div>
             </div>
             <br><br><br>
             <div class="split-right">
-                <img loading="lazy" src="datashop-images/login.png">
+                <img loading="lazy" data-src="datashop-images/login.png">
                 <div class="text">
                     <h3>Reducing Clutter: InCommon Login</h3>
                     <p>
-                        DataShop originally gave users two ways of logging into the site, but to switch between the two, users would manually have to click a button.
-                        This is clunky, unintuitive, and screams archaic. 
+                        DataShop originally gave users two ways of logging into the site. But to switch between the two, users would have to <b>manually</b> click a button.
+                        This is clunky and unintuitive.
                     </p>
                     <p>
-                        To address this issue, I utilized Primer's "Filter Input" component to combine both login methods into one.
-                        Now, users have direct access to the two methods without having to physically toggle between them. 
+                        To address this issue, I utilized Primer's "Filter Input" component to <b>combine both login methods into one.</b>
+                        Now, users have direct access to the two methods <b>without having to physically toggle between them.</b> 
                     </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="portfolio-section" id="datashop">
+    <!-- <div class="portfolio-section" id="datashop">
         <div class="section-title">
             <h2>5. Design Solution</h2>
         </div>
 
         <div class="section-content">
-            <img loading="lazy" src="datashop-images/final-design-1.png">
-            <img loading="lazy" src="datashop-images/final-design-2.png">
+            <img loading="lazy" data-src="datashop-images/final-design-1.png">
+            <img loading="lazy" data-src="datashop-images/final-design-2.png"> -->
         <!-- 
             <h3>Key Assets</h3>
             <p>
                 1. GitHub Primer Design System <br>
                 2. GitHub Octicons
             </p> -->
-        </div>
-    </div>
+        <!-- </div>
+    </div> -->
 
     <div class="portfolio-section" id="datashop">
         <div class="section-title">
-            <h2>6. Reflection</h2>
+            <h2>5. Reflection</h2>
         </div>
 
         <div class="section-content text-only">
             <p>
                 This was the first project I completed where I worked within the context of developers and researchers.
-                I learned how to present my design work to a non-designer audience and clearly communicate <i>why</i> I made certain design decisions.
+                I learned how to <b>present</b> my design work to a <b>non-designer audience</b> and clearly communicate <b>why I made certain design decisions.</b>
             </p>
 
             <h3>Impact</h3>
@@ -201,7 +208,7 @@
     <!-- footer -->
     <footer id="work-nav">
         <a href="plus.html"><h3><span class="material-symbols-outlined">arrow_back</span>PLUS</h3></a>
-        <a href="spotify.html"><h3>Spotify: Wave<span class="material-symbols-outlined">arrow_forward</span></h3></a>
+        <!-- <a href=""><h3>TBD<span class="material-symbols-outlined">arrow_forward</span></h3></a> -->
     </footer>
 
     <footer id="home-footer">

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link rel="icon" type="image/x-icon" href="../favicon-196x196.png">
+    <script src="../loadImages.js"></script>
 </head>
 
 <body>
@@ -42,7 +43,7 @@
             <p><span>Timeline:</span>
                 <br>Feb - Jul 2024 (6 months)</p>
         </div>
-        <img loading="lazy" src="plus-images/plus-pthumbnail.png">
+        <img loading="lazy" data-src="plus-images/plus-pthumbnail.png">
     </div>
 
     <div class="portfolio-section" id="plus">
@@ -52,7 +53,7 @@
         <div class="section-content text-only">
             <h3>What is PLUS?</h3>
             <p>
-                PLUS (Personalized Learning Squared) is a CMU-based startup intent on doubling math learning for 10k+ middle schoolers by providing
+                PLUS (Personalized Learning Squared) is a CMU-based startup intent on improving math learning for 10k+ middle schoolers by providing
                 novel human-AI tutoring opportunities to under-served communities.
                 <!-- PLUS is a part of the <a href="https://www.cmu.edu/simon/index.html" target="_blank">Simon Initiative</a>. -->
             </p>
@@ -60,8 +61,8 @@
 
             <h3>My Role</h3>
             <p>
-                Based on user interviews and insights from tutors, lead tutors, and tutor supervisors, I transitioned an external tutor scheduling Google spreadsheet to
-                a native PLUS scheduling table.
+                Based on user interviews and insights from tutors, lead tutors, and tutor supervisors, I transitioned an <b>external tutor scheduling Google spreadsheet</b> to
+                a <b>native app scheduling table.</b>
 
                 <!-- complete with cancellation alerts, session filtering, and built-in tutor attendance actions.  -->
             </p>
@@ -89,11 +90,23 @@
                 </p>
             </div>
         </div>
-        <br><br>
+        
         <div class="section-content">
-            <img loading="lazy" src="plus-images/final-design-1.png">
-            <img loading="lazy" src="plus-images/final-design-2.png">
-            <img loading="lazy" src="plus-images/final-design-3.png">
+            <br><br>
+            <img loading="lazy" data-src="plus-images/final-design-1.png">
+            <img loading="lazy" data-src="plus-images/final-design-2.png">
+            <img loading="lazy" data-src="plus-images/final-design-3.png">
+        </div>
+
+        <div class="section-content text-only list">
+            <h3>Core Features</h3>
+            <br>
+            <h4>1. Multiple Interfaces for Multiple User Groups</h4>
+            <h4>2. In-app Attendance Tracking</h4>
+            <h4>3. In-app Real Time Cancellation Alerts</h4>
+            <h4>4. Signed-up Sessions vs All Sessions Toggle</h4>
+            <h4>5. "Export CSV" and "Cancel Session" Actions</h4>
+
         </div>
     </div>
 
@@ -104,56 +117,56 @@
 
         <div class="section-content">
             <br>
-            <img loading="lazy" src="plus-images/user-research-overview.png">
+            <img loading="lazy" data-src="plus-images/user-research-overview.png">
             <br>
             <h3>General Process</h3>
             <div class="text-only">
                 <p>
                     While we had a clear understanding of what tutor supervisors needed from a scheduling table
-                    from past user research, there was uncertainty in what tutors/lead tutors needed out of the table.
+                    from past user research, there was <b>uncertainty in what tutors/lead tutors needed</b> out of the table.
                 </p>
                 <p>
-                    Thus, I conducted user research in the form of 20-min interviews to identify tutor and lead tutor scheduling JTBD's. 
-                    Specifically, I sought to evaluate the scheduling Google spreadsheet's performance and understand how tutors/lead tutors used the spreadsheet. 
+                    Thus, I conducted user research through <b>20-min interviews</b> to <b>identify tutor and lead tutor scheduling JTBD's. </b>
+                    Specifically, I sought to evaluate the scheduling Google spreadsheet's <b>performance</b> and understand <b>how tutors/lead tutors use</b> the spreadsheet. 
                 </p>
             </div>
 
         </div>
         <br><br><br>
         <div class="section-content split-right">
-            <span><img loading="lazy" src="plus-images/directed-storytelling.png"></span>
+            <span><img loading="lazy" data-src="plus-images/directed-storytelling.png"></span>
             <h3>User Interview: Directed Storytelling</h3>
             <div class="text">
                 <p>
-                    The first part of the user interviews involved using directed storytelling -- a "show not tell" approach -- to uncover the main painpoints of the spreadsheet.
+                    The first part of the user interviews involved using <b>directed storytelling</b> — a "show not tell" approach — to <b>uncover the main pain-points</b> of the spreadsheet.
                     <!-- It's much easier for people to describe their everyday workflows rather than identify specific issues they have with a product.  -->
                 </p>
                 <p>
-                    This way, I'm able to determine accurate painpoints users have with the spreadsheet, while placing less strain on the participant. 
+                    This way, I'm able to determine accurate user pain-points, while placing less strain on the participant. 
                 </p>
             </div>
         </div>
         <br><br>
         <div class="section-content split-right">
-            <img loading="lazy" src="plus-images/interactive-activity.png">
+            <img loading="lazy" data-src="plus-images/interactive-activity.png">
             <h3>User Interview: Interactive Activity</h3>
             <div class="text">
                 <p>
-                    The interactive activity part of the interviews gave participants the opportunity to rename, add, reorder, and delete columns on the scheduling spreadsheet.
-                    I asked participants to talk through the changes they're making and <i>why</i> they made certain changes. 
+                    The interview's interactive activity allowed participants to <b>rename/reorder and add/delete columns</b> on the scheduling spreadsheet.
+                    I asked participants to <b>talk through the changes</b> they're making and <b><i>why</i> they made</b> certain changes. 
                 </p>
                 <p>
-                    Through this activity, participants are able to implicitly express their pain points with the spreadsheet that they might've not been able to detail in the directed storytelling section.
+                    Through this activity, participants are able to <b>implicitly express</b> their pain-points with the spreadsheet that they might've not been able to detail through directed storytelling.
                 </p>
                 <p>
-                    Once finished with interviews, I compiled all the data into digestible insights shown below.
-                    Based on the insights, I created distinct HMW questions that outlined this product's problem space.
+                    Once finished with interviews, I compiled all the data into <b>digestible insights</b> shown below.
+                    Based on the insights, I created <b>distinct HMW questions that outlined this product's problem space.</b>
                 </p>
             </div>
         </div>
         <div class="section-content">
             <h3>User Insights</h3>
-            <img loading="lazy" src="plus-images/user-insights.png">
+            <img loading="lazy" data-src="plus-images/user-insights.png">
         </div>
     </div>
 
@@ -168,19 +181,19 @@
                 <h3>How might we might provide ways for lead tutors to take attendance conveniently?</h3>
                 <br>
                 <p>
-                    Lead tutors currently have to access a separate attendance tracker to take attendance.
+                    Lead tutors currently have to access a <b>separate attendance tracker</b> to take attendance.
                     It can be tedious to go back and forth between multiple tabs. 
                 </p>
             </div>
         </div>
         <br><br><br>
         <div class="section-content split-left">
-            <img loading="lazy" src="plus-images/find-name.png">
+            <img loading="lazy" data-src="plus-images/find-name.png">
             <h3>How might we provide tutors with an intuitive and efficient way of locating sessions they signed-up for?</h3>
             <br>
             <div class="text">
                 <p>
-                    Tutors currently have to manually identify which tutoring sessions they signed up for by scrolling or typing "cmd + f". 
+                    Tutors currently have to <b>manually locate</b> which tutoring sessions they signed up for by scrolling or typing "cmd + f". 
                     This is inefficient and time-wasting.
                 </p>
             </div>
@@ -192,21 +205,23 @@
                 <h3>How might we communicate more effectively with tutors regarding session cancellations or other updates?</h3>
                 <br>
                 <p>
-                    While cancellations are detailed via Slack/Gmail, sometimes tutors won't see these external messages.
-                    They will — however — check the spreadsheet. But since cancellations aren't updated on the spreadsheet,
-                    miscommunication can occur. 
+                    Even though many tutors regularly view the spreadsheet, cancellation <b>notifications aren't propagated onto the spreadsheet.</b> 
+                    Cancellations <i>are</i> detailed via Slack/Gmail, but tutors may not see these <b>external messages</b> in time.
+                </p>
+                <p>
+                    Due to this misalignment, miscommunication can easily occur. 
                 </p>
             </div>
         </div>
         <br><br><br>
         <div class="section-content split-left">
-            <img loading="lazy" src="plus-images/session-info.png">
+            <img loading="lazy" data-src="plus-images/session-info.png">
             <h3>How might we balance context and digestibility when presenting session info to tutors?</h3>
             <br>
             <div class="text">
                 <p>
-                    Tutors can be overwhelmed by all the info present on the spreadsheet,
-                    but they may also use the info to ensure they are joining the correct session. 
+                    Tutors can be <b>overwhelmed by all the info</b> present on the spreadsheet.
+                    However, they may use <b>certain info to corroborate</b> they are joining the correct session. 
                 </p>
             </div>
         </div>
@@ -218,49 +233,49 @@
         </div>
 
         <div class="section-content split-right">
-            <img loading="lazy" src="plus-images/attendance.png">
+            <img loading="lazy" data-src="plus-images/attendance.png">
             <h3>Attendance & Beyond: Action-based Buttons</h3>
             <div class="text">
                 <p>
-                    To consolidate taking attendance and viewing the schedule, I added an "Actions" column to the table.
+                    To <b>consolidate taking attendance and viewing the schedule,</b> I added an <b>"Actions" column</b> to the new schedule table.
                 </p>
                 <p>
-                    When the "View Tutors"/"Take Attendance" button is clicked, a pop-up window appears where lead tutors can check off tutors for that specific session and leave any notes.
+                    When the "View Tutors"/"Take Attendance" button is clicked, a <b>pop-up window appears</b> where lead tutors can check off tutors for that specific session and leave any notes.
                 </p>
                 <p>
-                    The other action buttons create clear access points for the session's Zoom link and students progress tracker.
+                    The other action buttons create <b>clear access points</b> for the specific session's Zoom link and student progress tracker.
                 </p>
             </div>
         </div>
         <br><br><br>
         <div class="section-content split-left">
-            <img loading="lazy" src="plus-images/interfaces.png">
+            <img loading="lazy" data-src="plus-images/interfaces.png">
             <h3>Personalizing the Schedule: 3 Separate Interfaces</h3>
             <div class="text">
                 <p>
                     Tutors, lead tutors, and admin all have different needs and restrictions.
-                    Since we record the user type of each PLUS account, each user automatically views the interface for their user group.
+                    Since PLUS records the user type of each PLUS account, each user can <b>automatically view the interface for their specific user type.</b> 
                 </p>
                 <p>
                     Differences between the interfaces include:
                 </p>
                 <span>
                     <p>
-                        1. Attendance edit access for lead tutors/admin vs disabled access for regular tutors. 
+                        1. <b>Attendance edit access</b> for lead tutors/admin vs <b>disabled access</b> for regular tutors. 
                     </p>
                     <p>
-                        2. "Export CSV" and "Cancel Session" actions for admin vs "Sign Up/Edit" sessions actions for tutors.
+                        2. <b>"Export CSV" and "Cancel Session"</b> actions for admin vs <b>"Sign Up/Edit" sessions</b> actions for tutors.
                     </p>
                 </span>
             </div>
         </div>
         <br><br><br>
         <div class="section-content split-right">
-            <img loading="lazy" src="plus-images/view-sessions.png">
+            <img loading="lazy" data-src="plus-images/view-sessions.png">
             <h3>Personalizing the Schedule: "View My Sessions" Toggle</h3>
             <div class="text">
                 <p>
-                    To make it easier for tutors to find their sessions, I introduced a toggle that filters between the tutors' signed-up sessions vs all sessions.
+                    To make it easier for tutors to find their sessions, I introduced a <b>toggle that filters between the tutors' signed-up sessions vs all sessions.</b>
                 </p>
                 <p>
                     This way, tutors don't have to manually find their names in all the sessions, and they still have the option to view all sessions. 
@@ -269,22 +284,22 @@
         </div>
         <br><br><br>
         <div class="section-content split-left">
-            <img loading="lazy" src="plus-images/alerts.png">
+            <img loading="lazy" data-src="plus-images/alerts.png">
             <h3>Clear Communication: Cancellation Alerts</h3>
             <div class="text">
                 <p>
-                    I added in-house schedule alerts for direct communication about cancellations from admin to tutors. 
+                    I added <b>in-app schedule alerts</b> for <b>direct communication</b> about cancellations from admin to tutors. 
                 </p>
 
                 <p>
-                    Admin can create these alerts from their interface, and once confirmed, the alerts propagate as dismissble banners to the tutors signed-up for the cancelled sessions.
-                    The column rows corresponding to cancelled sessions will now be in "disabled" mode. 
+                    Admin can create these alerts from their interface, and once confirmed, the alerts propagate as <b>dismissible banners</b> to the tutors signed-up for the canceled sessions.
+                    The column rows corresponding to canceled sessions will now be in <b>"disabled" mode. </b>
                 </p>
             </div>
         </div>
         <br><br><br>
         <div class="section-content split-right">
-            <img loading="lazy" src="plus-images/columns.png">
+            <img loading="lazy" data-src="plus-images/columns.png">
             <h3>Presenting Session Info: Removing Irrelevant Columns</h3>
             <div class="text">
                 <p>
@@ -296,7 +311,7 @@
                 </p>
                 <span>
                     <p>
-                        <b>Included Cols:</b> Day, School/Site, Time/Shift, Teacher Name
+                        <b>Included Cols:</b> Day, School, Shift, Teacher Name, Actions (Zoom link, Tutors, Lead Tutors)
                     </p>
                     <p>
                         <b>Excluded Cols:</b> Period, Breakout Rooms, Tutors Needed
@@ -310,14 +325,14 @@
         </div>
         <br><br><br>
         <div class="section-content split-left">
-            <img loading="lazy" src="plus-images/pagination.png">
+            <img loading="lazy" data-src="plus-images/pagination.png">
             <h3>Presenting Session Info: Pagination</h3>
             <div class="text">
                 <p>
                     Since the schedule isn't separated by school anymore, I have to ensure there isn't an overwhelming number of rows in the table. 
                 </p>
                 <p>
-                    So, I introduced pagination to only display 10 entries per page, along with a time range filter so tutors/admin can select a specific time range of entries they want to view. 
+                    So, I introduced pagination to only <b>display 10 entries per page,</b> along with a <b>time range filter</b> so tutors/admin can select a specific time range of entries they want to view. 
                 </p>
             </div>
         </div>
@@ -340,13 +355,13 @@
         <div class="section-content text-only">
             <p>
                 Before this project, I'd never worked with multiple distinct user groups. 
-                I had to keep in mind sometimes conflicting JTBDs, while making sure the design was still consistent across each group.
+                I had to keep in mind sometimes <b>conflicting JTBDs,</b> while making sure the <b>design was still consistent</b> across each group.
             </p>
 
             <p>
                 I also learned that <b>design lives within the context of development</b>.
                 Shiv (head of product) noted the difficulties of coding complex pagination and different interfaces for one product.
-                I hadn't considered that some features are easy to implement design-wise, but not so much dev-wise. 
+                I hadn't considered that implementation effort may vary between design and development.
                 Moving forward I'll make sure my designs <b> take into account developer time and feasibility.</b> 
             </p>
 
@@ -360,7 +375,7 @@
 
     <!-- footer -->
     <footer id="work-nav">
-        <a href="spotify.html"><h3><span class="material-symbols-outlined">arrow_back</span>Spotify: Wave</h3></a>
+        <a href=""><h3><span class="material-symbols-outlined">arrow_back</span>TBD</h3></a>
         <a href="datashop.html"><h3>DataShop<span class="material-symbols-outlined">arrow_forward</span></h3></a>
     </footer>
 
