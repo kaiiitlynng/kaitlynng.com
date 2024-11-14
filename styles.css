@@ -7,7 +7,7 @@ css references:
 /* @import url("https://use.typekit.net/sxt3pwj.css"); */
 
 :root{
-    --color-nav: rgba(255,255,255,0.25);
+    --color-nav: rgba(255,255,255,1);
     --color-nav-mobile: white;
     --color-text: black;
     --color-accent: #F08000;
@@ -56,7 +56,6 @@ nav {
     background: var(--color-nav);
     /* backdrop-filter: blur(1px);
     -webkit-backdrop-filter: blur(1px); */
-
     height: 80px;
     width: 100%;
     z-index: 2;
@@ -207,16 +206,6 @@ footer {
 #work-nav span {
     display: block;
 }
-
-/* ! make mobile screen more responsive */
-@media (max-width: 650px) {
-    .footer-links a, .footer-copyright p {
-        font-size: 8px;
-    }
-    .footer-links a {
-        padding-right: 0px;
-    }
-}
 /* ---- FOOTER SECTION END ---- */
 
 /* ---- Home/Work SECTION START ---- */
@@ -298,7 +287,7 @@ footer {
 .card img {
     max-width: 50%;
     max-height: auto;
-    object-fit: cover;
+    object-fit: contain;
     margin-right: 105px;
 }
 
@@ -338,10 +327,30 @@ footer {
     transition: 0.25s;
 }
 
+@media (max-width: 1200px) {
+    .home-title h1, .about-title h1 {
+        font-size: 30px;
+    } 
+}
+
+
+@media (max-width: 1000px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        max-width: 100%;
+    }
+}
+
 /*! mobile screen font size -> local var */
 @media (max-width: 650px) {
-    .home-title h1, .about-title h1 {
-        font-size: 20px;
+    .footer-links a, .footer-copyright p {
+        font-size: 10px;
+    }
+    .footer-links a {
+        padding-right: 0px;
     }
 }
 /* ---- HOME/WORK SECTION END ---- */
@@ -378,6 +387,12 @@ footer {
 .more-images .column img {
     width: 100%;
     padding-bottom: 10px;
+}
+
+@media (max-width: 900px) {
+    .more-images .image-box {
+        flex-direction: column;
+    }
 }
 /* ---- &MORE SECTION END ---- */
 
