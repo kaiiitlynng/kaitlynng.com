@@ -1,0 +1,45 @@
+@font-face {
+  font-family: 'AM Robbie Analog Round Trial';
+  src: url('/fonts/AMRobbieAnalogRoundTrial-80Standard.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT Pressura Mono Trial';
+  src: url('/fonts/GT-Pressura-Mono-Text-Trial.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GT Pressura Mono Trial';
+  src: url('/fonts/GT-Pressura-Mono-Light-Trial.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-bg: #ffffff;
+  --color-text: #000000;
+  --color-highlight: #ced9dd;
+  --color-accent: #fd0093;
+  --color-border: #808080;
+  --color-border-light: #d9d9d9;
+  --color-nav-pill-bg: rgb(255 255 255 / 55%);
+  --color-nav-hover: #c4e817;
+
+  --font-display: 'AM Robbie Analog Round Trial', 'Space Mono', ui-monospace, monospace;
+  --font-mono: 'GT Pressura Mono Trial', 'IBM Plex Mono', ui-monospace, monospace;
+  --font-serif: 'Gowun Batang', Georgia, serif;
+  --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  --nav-height: 4.5rem;
+  --content-max-width: 72rem;
+  --content-padding: clamp(1.25rem, 4vw, 2.5rem);
+
+  --radius-sm: 2px;
+}

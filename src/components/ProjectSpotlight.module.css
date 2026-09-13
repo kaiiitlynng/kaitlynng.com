@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  padding: 0.75rem;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.imageFrame {
+  flex: 1;
+  margin-top: 0.75rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-highlight);
+  background-size: cover;
+  background-position: center;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.description {
+  margin-top: 0.6rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-transform: lowercase;
+}
